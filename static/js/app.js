@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loginButton.addEventListener("click", (e) => {
         e.stopPropagation();
         if (window.innerWidth >= 1024) {
-          window.location.href = "/register.html";
+          window.location.href = "register.html";
         } else {
           bottomSheet.classList.remove("translate-y-full");
           bottomSheet.classList.add("translate-y-0");
