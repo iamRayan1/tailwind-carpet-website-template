@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/output.css">
+    <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+<body class="box-border font-RokhMedium font-semibold text-lg text-black-x">
+    <svg class=" hidden">
+        <symbol id="home"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </symbol>
+        <symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </symbol>     
+        <symbol id="x-mark" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </symbol>     
+        <symbol id="more" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </symbol>           
+        <symbol id="shop" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.36 9L18.96 12H5.04L5.64 9H18.36ZM20 4H4V6H20V4ZM20 7H4L3 12V14H4V20H14V14H18V20H20V14H21V12L20 7ZM6 18V14H12V18H6Z" fill="#212121"/>
+        </symbol>
+        <symbol id="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+        </symbol>        
+        <symbol id="like" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.75 8.35413C18.3 8.35413 16.9083 9.02913 16 10.0958C15.0917 9.02913 13.7 8.35413 12.25 8.35413C9.68332 8.35413 7.66666 10.3708 7.66666 12.9375C7.66666 16.0875 10.5 18.6541 14.7917 22.5541L16 23.6458L17.2083 22.5458C21.5 18.6541 24.3333 16.0875 24.3333 12.9375C24.3333 10.3708 22.3167 8.35413 19.75 8.35413ZM16.0833 21.3125L16 21.3958L15.9167 21.3125C11.95 17.7208 9.33332 15.3458 9.33332 12.9375C9.33332 11.2708 10.5833 10.0208 12.25 10.0208C13.5333 10.0208 14.7833 10.8458 15.225 11.9875H16.7833C17.2167 10.8458 18.4667 10.0208 19.75 10.0208C21.4167 10.0208 22.6667 11.2708 22.6667 12.9375C22.6667 15.3458 20.05 17.7208 16.0833 21.3125Z" fill="#2E303B"/>
+        </symbol>
+        <symbol id="replly" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.5 10.1666L17.325 11.3416L18.5 12.525L20.3083 14.3333H12.6667C10.3667 14.3333 8.5 16.2 8.5 18.5V21.8333H10.1667V18.5C10.1667 17.125 11.2917 16 12.6667 16H20.3083L17.325 18.9833L18.5 20.1666L23.5 15.1666L18.5 10.1666Z" fill="#2E303B"/>
+        </symbol>                                
+    </svg>
+
+
+
+    <main>
+        <section class="Breadcrumb">
+            <div class="container">
+                <div class="flex items-center mt-4 mb-12 text-sm md:text-lg">
+                    <a href="#" class="flex gap-1 text-tint-8">
+                        <svg class="w-4 md:w-6 h-4 md:h-6"><use href="#home"></use></svg>
+                        خانه
+                        <svg class="w-4 md:w-6 h-4 md:h-6 text-ash-9"><use href="#chevron-left"></use></svg>
+                    </a>
+                    <a href="#" class="flex gap-1 text-tint-8">
+                        فرش ماشینی
+                        <svg class="w-4 md:w-6 h-4 md:h-6 text-ash-9"><use href="#chevron-left"></use></svg>
+                    </a>
+                    <a href="#" class="text-ash-8">ماهساره</a>
+            </div>
+        </section>
+
+        <section class="product-detail">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row lg:items-start mb-20">
+                    <!-- image and descriptions -->
+                    <div class="flex flex-col items-center lg:items-start md:flex-row justify-between lg:justify-start w-full gap-8 lg:gap-5 pb-4 lg:pb-0 border-b border-ash-7 lg:border-none">
+                        <!-- product images -->
+                        <div class="w-55 sm:w-95 xl:w-109 h-84.5 sm:h-110 lg:h-150.25 flex flex-col items-center gap-10">
+                            <!-- main image -->
+                            <div class="  cursor-pointer overflow-hidden" onclick="openModal()">
+                                <img id="mainImage" src="static/images/product-images/1/farsh-mahsare-atarina-zamine-abi-main.png" alt="محصول" class="w-55 sm:w-73.25 h-84.5 sm:h-115.25 object-cover rounded-xl transition-all duration-300" />
+                            </div>
+                    
+                            <!-- thumbnails -->
+                            <div id="thumbnailContainer" class="hidden lg:flex space-x-3 overflow-x-auto items-center">
+                                <!-- little image (products outher image) -->
+                                <div id="moreBtn" class="w-20 xl:w-25 h-20 xl:h-25 relative border border-ash-6 p-2.5 text-2xl rounded-lg cursor-pointer" >
+                                    <div class="absolute inset-0 bg-white/60 backdrop-blur-[2px] flex items-center justify-center">
+                                        <svg class="w-6 h-6"><use href="#more"></use></svg>
+                                    </div>  
+                                    <img src="static/images/product-images/1/farsh-mahsare-atarina-zamine-abi-main.png" alt="main" class=" object-cover w-full h-full">                                  
+                                </div>
+                            </div>
+
+                            <!-- modal-->
+                            <div id="modal" class="fixed inset-0  hidden z-50">
+                                
+                                <div class="w-full h-full bg-black p-6 flex flex-col justify-center items-center overflow-hidden relative gap-10">
+                                    <button onclick="closeModal()" class="fixed left-10 top-10 text-white font-bold cursor-pointer">
+                                        <svg class="w-7 h-7"><use href="#x-mark"></use></svg>
+                                    </button>
+                                    <!-- preview -->
+                                    <div class="w-150 h-150 flex items-center justify-center gap-x-5">
+                                        <button onclick="prevImage()" class="w-7 sm:w-10 h-7 sm:h-10 flex items-center justify-center bg-white/90  hover:bg-white/80 transition-colors  rounded-full  text-ash-11 cursor-pointer "><svg class="w-6 h-6 rotate-180"><use href="#chevron-left"></use></svg></button>
+                                        <img id="modalPreview" src="" alt="" class="w-60 sm:w-100 lg:w-90 xl:w-110 h-100 sm:h-150 lg:h-110 xl:h-150 object-center  rounded-xs" />
+                                        <button onclick="nextImage()" class="w-7 sm:w-10 h-7 sm:h-10 flex items-center justify-center bg-white/90  hover:bg-white/80 transition-colors  rounded-full  text-ash-11 cursor-pointer "><svg class="w-6 h-6"><use href="#chevron-left"></use></svg></button>
+                                    </div>
+                                    <!-- gallery thumbnails -->
+                                    <div id="modalGallery" class="flex gap-1 border-t mb-2"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- descriptions -->
+                        <div class="w-90 xl:w-110 h-30 md:h-110 xl:h-135.25 flex flex-col gap-8 md:gap-7">
+                            <!-- breadcrumb and carpet name -->
+                            <div class="border-b-0 md:border-b border-ash-7 ">
+                                <!-- breadcrumb -->
+                                <div class="hidden md:flex items-center gap-0.5 text-tint-8 ">
+                                    <a href="#">فرش ماهساره</a>
+                                    <span>  /  </span>
+                                    <a href="#"> فرش ماشینی ماهساره</a>
+                                </div>
+
+                                <!-- name -->
+                                <h1 class="text-base text-center md:text-start md:text-xl xl:text-2xl font-bold leading-[140%] py-3.75">فرش ماشینی  ماهساره طرح آترینا زمینه آبی</h1>
+                            </div>
+
+                            <!-- detailes -->
+                            <div class="flex flex-col gap-6">
+                                <!--carpet size -->
+                                <p class="hidden md:flex items-center gap-4 ">
+                                    اندازه فرش:
+                                    <span>شش متری (۳۰۰* ۲۰۰)</span>
+                                </p>
+
+                                <!-- more detailes -->
+                                <div>
+                                    <!-- title -->
+                                    <p class="hidden md:block mb-4">ویژگی ها</p>
+
+                                    <div class="flex flex-row md:flex-col items-center gap-4 md:gap-10">
+                                        <div class="flex flex-col gap-4">
+                                                <div class="flex items-center gap-4 md:gap-6">
+                                                    <div class="w-20.25 md:w-40 xl:w-52 h-11 md:h-17.5 flex flex-col justify-center items-start gap-0 md:gap-1 bg-ash-3 px-3 py-1.5 rounded-lg">
+                                                        <p class="text-xs md:text-sm font-normal text-ash-11 leading-[180%]">کیفیت فرش</p>
+                                                        <p class="text-xs md:text-base leading-[180%]">درجه یک</p>
+                                                    </div>
+                                                    <div class="w-20.25 md:w-40 xl:w-52 h-11 md:h-17.5 flex flex-col justify-center items-start gap-0 md:gap-1 bg-ash-3 px-3 py-1.5 rounded-lg">
+                                                        <p class="text-xs md:text-sm font-normal text-ash-11 leading-[180%]">رنگ زمینه</p>
+                                                        <p class="text-xs md:text-base leading-[180%]">آبی</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="hidden md:flex items-center gap-6">
+                                                    <div class="w-40 xl:w-52 h-17.5 flex flex-col items-start gap-1 bg-ash-3 px-3 py-1.5 rounded-lg">
+                                                        <p class="text-sm font-normal text-ash-11 leading-[180%]">شکل</p>
+                                                        <p class="text-base leading-[180%]">مستطیل</p>
+                                                    </div>
+                                                    <div class="w-40 xl:w-52 h-17.5 flex flex-col items-start gap-1 bg-ash-3 px-3 py-1.5 rounded-lg">
+                                                        <p class="text-sm font-normal text-ash-11 leading-[180%]">جنس نخ پود</p>
+                                                        <p class="text-base leading-[180%]">پلی استر و پنبه</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="hidden xl:flex items-center gap-6">
+                                                    <div class="w-40 xl:w-52 h-17.5 flex flex-col items-start gap-1 bg-ash-3 px-3 py-1.5 rounded-lg">
+                                                         <p class="text-sm font-normal text-ash-11 leading-[180%]">جنس نخ تار</p>
+                                                         <p class="text-base leading-[180%]">پلی استر و پنبه</p>
+                                                    </div>
+                                                    <div class="w-40 xl:w-52 h-17.5 flex flex-col items-start gap-1 bg-ash-3 px-3 py-1.5 rounded-lg">
+                                                        <p class="text-sm font-normal text-ash-11 leading-[180%]">جنس نخ خاب</p>
+                                                        <p class="text-base leading-[180%]">اکلیریک هیت ست شده</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <!-- show more link -->
+                                        <a href="#" class="w-36.5 h-8 md:h-10 flex items-center justify-center text-tint-8 text-sm font-semibold md:font-bold border border-r-tint-8 rounded-lg md:rounded-xl ">مشاهده همه ویژگی ها</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!-- selleer name -->
+                    <div class="w-full lg:w-72 xl:w-78 h-93.75 flex flex-col gap-6 py-7.75 px-3 border-b lg:border border-ash-7 rounded-xl mt-0 lg:mt-[91.3px]">
+                        <!-- name -->
+                        <p class="text-base font-bold">فروشنده</p>
+                        <!-- seller company -->
+                        <a href="#" class=" flex items-center gap-2 text-base text-ash-12">
+                            <svg class="w-6 h-6"><use href="#shop"></use></svg>
+                            شرکت فرش سهند
+                        </a>
+                        <!-- seller performance -->
+                        <p class="text-sm">
+                            عملکرد
+                            <span class="text-green-x">عالی</span>
+                        </p>
+                        <!-- seller rate -->
+                        <div class="flex items-center gap-2">
+                            <svg class="w-3.5 h-3.5 text-yellow-x"><use href="#star"></use></svg>
+                            <span class="text-sm">4.6</span>
+                        </div>
+                        <!-- line -->
+                        <div class="w-full h-[1px] bg-ash-7 rounded-3xl"></div>
+                        <!-- price -->
+                        <p class="w-full flex lg:flex-col xl:flex-row items-center lg:items-start xl:items-center justify-between">
+                            <span class="text-base font-bold">قیمت:</span>
+                            <span>۱۳/۵۰۰/۰۰۰ تومان</span>
+                        </p>
+                        <!--add toi cart botton -->
+                        <button class="w-full h-10 bg-tint-8 text-sm font-bold text-white rounded-xl cursor-pointer">افزودن به سبد خرید</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="similar-carpets">
+            <div class="container">
+                <div class="mb-12 md:mb-20 lg:mb-30">
+                    <!-- title  -->
+                    <div class="text-xl mb-8">
+                        <!-- title -->
+                        <h1>فرش های مشابه</h1>
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div id="swiper-similar-carpets" class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="w-56.5 h-123.25 flex flex-col  justify-between p-4 border border-ash-5 rounded-xl">
+                                    <!--product iamge  -->
+                                    <div>
+                                        <img src="static/images/machine_carpets/فرش ماشینی لوکس سهند زمینه سرمه ای.png" alt="فرش ماشینی لوکس سهند زمینه سرمه ای " class="w-full h-65.25 object-cover">
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-4">
+                                        <!-- title -->
+                                        <h1 class="leading-[1.8]">فرش ماشینی لوکس سهند زمینه سرمه ای </h1>
+                
+                                        <!-- price -->
+                                        <p class="w-full flex items-center justify-between">
+                                            <span class="text-sm">قیمت:</span>
+                                            <span>۱۳/۵۰۰/۰۰۰ تومان</span>
+                                        </p>
+                                    </div>
+                                    <!-- show more -->
+                                    <a href="#" class="w-full h-10 flex items-center justify-center text-sm font-bold text-tint-8 border border-tint-8 rounded-xl">مشاهده  بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-56.5 h-123.25 flex flex-col  justify-between p-4 border border-ash-5 rounded-xl">
+                                    <!--product iamge  -->
+                                    <div>
+                                        <img src="static/images/handmade_carpet/فرش کهن  دست بافت سهند زمینه سرمه ای.png" alt="فرش کهن  دست بافت سهند زمینه سرمه ای " class="w-full h-65.25 object-cover">
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-4">
+                                        <!-- title -->
+                                        <h1 class="leading-[1.8]">فرش کهن  دست بافت سهند زمینه سرمه ای </h1>
+                
+                                        <!-- price -->
+                                        <p class="w-full flex items-center justify-between">
+                                            <span class="text-sm">قیمت:</span>
+                                            <span>۱۳/۵۰۰/۰۰۰ تومان</span>
+                                        </p>
+                                    </div>
+                                    <!-- show more -->
+                                    <a href="#" class="w-full h-10 flex items-center justify-center text-sm font-bold text-tint-8 border border-tint-8 rounded-xl">مشاهده  بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-56.5 h-123.25 flex flex-col  justify-between p-4 border border-ash-5 rounded-xl">
+                                    <!--product iamge  -->
+                                    <div>
+                                        <img src="static/images/machine_carpets/فرش ماشینی فرش رادین طرح شاه عباسی آرامش زمینه کرم.png" alt="فرش ماشینی فرش رادین طرح شاه عباسی آرامش " class="w-full h-65.25 object-cover">
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-4">
+                                        <!-- title -->
+                                        <h1 class="leading-[1.8]">فرش ماشینی فرش رادین طرح شاه عباسی آرامش </h1>
+                
+                                        <!-- price -->
+                                        <p class="w-full flex items-center justify-between">
+                                            <span class="text-sm">قیمت:</span>
+                                            <span>۱۳/۵۰۰/۰۰۰ تومان</span>
+                                        </p>
+                                    </div>
+                                    <!-- show more -->
+                                    <a href="#" class="w-full h-10 flex items-center justify-center text-sm font-bold text-tint-8 border border-tint-8 rounded-xl">مشاهده  بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-56.5 h-123.25 flex flex-col  justify-between p-4 border border-ash-5 rounded-xl">
+                                    <!--product iamge  -->
+                                    <div>
+                                        <img src="static/images/machine_carpets/فرش ماشینی فرش مشهد طرح افشان زمینه کرم.png" alt="فرش ماشینی فرش مشهد طرح افشان زمینه کرم" class="w-full h-65.25 object-cover">
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-4">
+                                        <!-- title -->
+                                        <h1 class="leading-[1.8]">فرش ماشینی فرش مشهد طرح افشان زمینه کرم</h1>
+                
+                                        <!-- price -->
+                                        <p class="w-full flex items-center justify-between">
+                                            <span class="text-sm">قیمت:</span>
+                                            <span>۱۳/۵۰۰/۰۰۰ تومان</span>
+                                        </p>
+                                    </div>
+                                    <!-- show more -->
+                                    <a href="#" class="w-full h-10 flex items-center justify-center text-sm font-bold text-tint-8 border border-tint-8 rounded-xl">مشاهده  بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-56.5 h-123.25 flex flex-col  justify-between p-4 border border-ash-5 rounded-xl">
+                                    <!--product iamge  -->
+                                    <div>
+                                        <img src="static/images/handmade_carpet/فرش دست بافت نگین مشهد زمینه فیلی.png" alt="فرش دست بافت نگین مشهد زمینه فیلی" class="w-full h-65.25 object-cover">
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-4">
+                                        <!-- title -->
+                                        <h1 class="leading-[1.8]">فرش دست بافت نگین مشهد زمینه فیلی</h1>
+                
+                                        <!-- price -->
+                                        <p class="w-full flex items-center justify-between">
+                                            <span class="text-sm">قیمت:</span>
+                                            <span>۱۳/۵۰۰/۰۰۰ تومان</span>
+                                        </p>
+                                    </div>
+                                    <!-- show more -->
+                                    <a href="#" class="w-full h-10 flex items-center justify-center text-sm font-bold text-tint-8 border border-tint-8 rounded-xl">مشاهده  بیشتر</a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="comments"> 
+            <div class="container">
+                <div class="mb-12 md:mb-20 lg:mb-30">
+                    <!-- title  -->
+                    <div class="text-xl mb-8 hidden sm:block">
+                        <!-- title -->
+                        <h1>دیدگاه ها و امتیاز</h1>
+                    </div>
+
+                    <!-- comments -->
+                    <div class="flex flex-col gap-3">
+                        <!-- users coment -->
+                        <div>
+                            <!-- 1 -->
+                            <div class="flex flex-col gap-4 px-4 pt-4 ">
+                                <!-- user information -->
+                                <div class=" flex items-end gap-6">
+                                    <!--  picture -->
+                                    <div class="w-14 h-14 rounded-full overflow-hidden">
+                                        <img src="static/images/users-picture/aliereza-karimi.png" alt="user" class="w-full h-full object-cover">
+                                    </div>
+                                        
+                                    <!--username // date,llike,replly and moer -->
+                                    <div class="w-full flex items-end ">
+                                        <h6 class="flex-grow  text-sm md:text-base font-bold py-2 border-b border-ash-4">احمد کنشلو</h6>
+                                        <div class="flex flex-col-reverse  sm:flex-row items-start sm:items-center gap-4">
+                                            <p class="text-xs text-gray-500">۵ روز پیش</p>
+                                            <div class="flex items-center gap-2">
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#like"></use></svg></button>
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#replly"></use></svg></button>
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#more"></use></svg></button>                               
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <!-- users coment and rate -->
+                                <div class="mr-20 flex flex-col justify-between gap-5 border-b border-ash-6">
+                                    <!-- rate -->
+                                    <div class="w-11 h-7.25 flex items-center justify-between px-2 bg-slate-100 rounded-lg">
+                                        <svg class="w-3.5 h-3.5 text-yellow-x"><use href="#star"></use></svg>
+                                        <span class="text-base font-medium text-gray-500">۴</span>
+                                    </div>
+                                    <p class="text-xs sm:text-sm text-slate-800 pb-6">ایرانی فرش هم قیمتاش خوبه و هم کیفیت فرش هایی که میفروشه</p>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="flex flex-col gap-4 px-4 pt-4 ">
+                                <!-- user information -->
+                                <div class=" flex items-end gap-6">
+                                    <!--  picture -->
+                                    <div class="w-14 h-14 rounded-full overflow-hidden">
+                                        <img src="static/images/users-picture/mobin.png" alt="user" class="w-full h-full object-center">
+                                    </div>
+                                        
+                                    <!--username // date,llike,replly and moer -->
+                                    <div class="w-full flex items-end ">
+                                        <h6 class="flex-grow  text-sm md:text-base font-bold py-2 border-b border-ash-4">مبین فرازمند</h6>
+                                        <div class="flex flex-col-reverse  sm:flex-row items-start sm:items-center gap-4">
+                                            <p class="text-xs text-gray-500">۵ روز پیش</p>
+                                            <div class="flex items-center gap-2">
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#like"></use></svg></button>
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#replly"></use></svg></button>
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#more"></use></svg></button>                               
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <!-- users coment and rate -->
+                                <div class="mr-20 flex flex-col justify-between gap-5 border-b border-ash-6">
+                                    <!-- rate -->
+                                    <div class="w-11 h-7.25 flex items-center justify-between px-2 bg-slate-100 rounded-lg">
+                                        <svg class="w-3.5 h-3.5 text-yellow-x"><use href="#star"></use></svg>
+                                        <span class="text-base font-medium text-gray-500">۴</span>
+                                    </div>
+                                    <p class="text-xs sm:text-sm text-slate-800 pb-6">خرید از ایرانی فرش واسم همیشه جذاب بوده و هست.</p>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="flex flex-col gap-4 px-4 pt-4 ">
+                                <!-- user information -->
+                                <div class=" flex items-end gap-6">
+                                    <!--  picture -->
+                                    <div class="w-14 h-14 rounded-full overflow-hidden">
+                                        <img src="static/images/users-picture/ahmad.png" alt="user" class="w-full h-full object-center">
+                                    </div>
+                                        
+                                    <!--username // date,llike,replly and moer -->
+                                    <div class="w-full flex items-end ">
+                                        <h6 class="flex-grow  text-sm md:text-base font-bold py-2 border-b border-ash-4">علیرضا کریمی</h6>
+                                        <div class="flex flex-col-reverse  sm:flex-row items-start sm:items-center gap-4">
+                                            <p class="text-xs text-gray-500">۵ روز پیش</p>
+                                            <div class="flex items-center gap-2">
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#like"></use></svg></button>
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#replly"></use></svg></button>
+                                                <button class="w-8 h-8 flex items-center cursor-pointer"><svg class="w-full h-full"><use href="#more"></use></svg></button>                               
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <!-- users coment and rate -->
+                                <div class="mr-20 flex flex-col justify-between gap-5 border-b border-ash-6">
+                                    <!-- rate -->
+                                    <div class="w-11 h-7.25 flex items-center justify-between px-2 bg-slate-100 rounded-lg">
+                                        <svg class="w-3.5 h-3.5 text-yellow-x"><use href="#star"></use></svg>
+                                        <span class="text-base font-medium text-gray-500">۴</span>
+                                    </div>
+                                    <p class="text-xs sm:text-sm text-slate-800 pb-6">فرش مناسب و زیبایی بود از  رنگ و طرحش خیلی خوشم اومد.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- show more link -->
+                        <a href="#" class="hidden mx-auto w-37.25 h-10 md:flex items-center justify-center px-2 text-sm text-tint-8 font-bold border border-tint-8 rounded-xl ">مشاهده همه دیدگاه ها</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+
+    
+    <script src="static/js/product-gallery.js"></script>
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/output.css">
+    <title>shoppoing</title>
+</head>
+<body class="box-border font-RokhMedium font-semibold text-lg text-black-x">
+    <svg class="hidden">
+        <symbol id="home"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </symbol>
+        <symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </symbol>
+        <symbol id="plus" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.1666 15.1667H15.1666V22.1667H12.8333V15.1667H5.83325V12.8333H12.8333V5.83333H15.1666V12.8333H22.1666V15.1667Z" fill="#E43434"/>
+        </symbol>  
+        <symbol id="trash" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.6666 10.5V22.1667H9.33325V10.5H18.6666ZM16.9166 3.5H11.0833L9.91658 4.66667H5.83325V7H22.1666V4.66667H18.0833L16.9166 3.5ZM20.9999 8.16667H6.99992V22.1667C6.99992 23.45 8.04992 24.5 9.33325 24.5H18.6666C19.9499 24.5 20.9999 23.45 20.9999 22.1667V8.16667Z" fill="#CB1B1B"/>
+        </symbol>                       
+    </svg>
+
+
+    <main>
+        <section class="Breadcrumb">
+            <div class="container">
+                <div class="flex items-center mt-4 mb-12 text-sm md:text-lg">
+                    <a href="#" class="flex gap-1 text-tint-8">
+                        <svg class="w-4 md:w-6 h-4 md:h-6"><use href="#home"></use></svg>
+                        خانه
+                        <svg class="w-4 md:w-6 h-4 md:h-6 text-ash-9"><use href="#chevron-left"></use></svg>
+                    </a>
+                    <a href="#" class="flex gap-1 text-tint-8">
+                        فرش ماشینی
+                        <svg class="w-4 md:w-6 h-4 md:h-6 text-ash-9"><use href="#chevron-left"></use></svg>
+                    </a>
+                    <a href="#" class="flex gap-1 text-tint-8">
+                        ماهساره
+                        <svg class="w-4 md:w-6 h-4 md:h-6 text-ash-9"><use href="#chevron-left"></use></svg>
+                    </a>
+                    <a href="#" class="text-ash-8">سبد خرید</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="shopping-cart">
+            <div class="container">
+                <div class="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-2 mb-12 md:mb-20 lg:mb-30">
+                    <!-- cart-->
+                    <div class="max-w-208 w-full h-96.5 flex flex-col gap-14 md:px-6 md:py-9 border-0 md:border border-ash-7 rounded-xl">
+                        <!-- title -->
+                        <h6 class="text-base font-bold">سبد خرید شما</h6>
+
+                        <!-- image and description -->
+                        <div class="flex items-center gap-6">
+                            <!-- image -->
+                            <div >
+                                <div class="w-40 h-58.5 overflow-hidden mb-6 md:mb-0">
+                                    <img src="static/images/machine_carpets/فرش ماشینی فرش ماهساره طرح آترینا زمینه آبی.png" alt="" class="w-full h-full object-cover">
+                                </div>
+                                   <!-- number -->
+                                <div class="md:hidden w-37.5 h-14.75 flex items-start  px-2 py-1.5 justify-between  border border-ash-7 rounded-lg ">
+                                    <!-- add more -->
+                                    <button class="w-7 h-7 flex items-center justify-center text-tint-8 cursor-pointer"><svg class="w-full h-full"><use href="#plus"></use></svg></button>
+                                    <!-- number -->
+                                    <p class="flex flex-col items-center">
+                                        <span class="text-xl">۱</span>
+                                        <span class="text-sm">تعداد</span>
+                                    </p>
+                                    <!-- less -->
+                                    <button class="w-7 h-7 flex items-center justify-center text-tint-8 cursor-pointer"><svg class="w-full h-full"><use href="#trash"></use></svg></button>
+                                </div>
+                            </div>
+                            
+
+                            <!-- description -->
+                            <div class="flex flex-col gap-3.5">
+                                <!-- name -->
+                                <h1 class="text-xl">فرش ماشینی  ماهساره طرح آترینا زمینه آبی</h1>
+                                <!-- color -->
+                                <p class="flex items-center gap-2 font-medium">
+                                    <span>رنگ:</span>
+                                    <span>آبی </span>
+                                </p>
+                                <!-- seller name -->
+                                <p>شرکت فرش سهند</p>
+                                <!-- price -->
+                                <p class="flex items-center gap-6">
+                                    <span class="text-base">قیمت:</span>
+                                    <span class="text-xl">۱۳/۵۰۰/۰۰۰</span>
+                                </p>
+                                <!-- number md:block -->
+                                <div class="hidden w-37.5 h-14.75 md:flex items-start  px-2 py-1.5 justify-between  border border-ash-7 rounded-lg ">
+                                    <!-- add more -->
+                                    <button class="w-7 h-7 flex items-center justify-center text-tint-8 cursor-pointer"><svg class="w-full h-full"><use href="#plus"></use></svg></button>
+                                    <!-- number -->
+                                    <p class="flex flex-col items-center">
+                                        <span class="text-xl">۱</span>
+                                        <span class="text-sm">تعداد</span>
+                                    </p>
+                                    <!-- less -->
+                                    <button class="w-7 h-7 flex items-center justify-center text-tint-8 cursor-pointer"><svg class="w-full h-full"><use href="#trash"></use></svg></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- payment -->
+                    <div class="w-full md:w-78 h-68.75 flex flex-col justify-between py-6.5 px-4.75 border-y border-0 md:border border-ash-7 md:rounded-xl">
+                        <!-- carpet number -->
+                        <p class="flex items-center justify-between">
+                            <span class="text-base">تعداد فرش:</span>
+                            <span class="text-xl">۱</span>
+                        </p>
+                        <!-- total price -->
+                        <p class="flex items-center justify-between">
+                            <span class="text-base">مجموع سبد خرید: </span>
+                            <span class="text-xl">۱۳/۵۰۰/۰۰۰</span>
+                        </p>
+                        <!-- sender name -->
+                        <p class="flex items-center justify-between">
+                            <span class="text-base">ارسال توسط:</span>
+                            <span class="text-xl">ایرانی فرش</span>
+                        </p>
+                        <!-- payment link -->
+                        <a href="#" class="w-full h-10 flex items-center justify-center text-sm bg-tint-8 font-bold text-white rounded-xl">سفارش و خرید</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

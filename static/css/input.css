@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family:Rokh-Bold;
+    src: url(../fonts/Rokh-Bold.woff2) format('woff2');
+    font-display:swap ;
+}
+
+@font-face {
+    font-family: Rokh-Medium;
+    src: url(../fonts/Rokh-Medium.woff2) format('woff2');
+    font-display:swap ;
+}
+
+@font-face {
+    font-family: Rokh-Regular;
+    src: url(../fonts/Rokh-Regular.woff2) format('woff2');
+    font-display:swap ;
+}
+
+
+@theme {
+    /*  fonts */
+    --font-RokhBold: Rokh-Bold;
+    --font-RokhMedium: Rokh-Medium;
+    --font-RokhRegular:Rokh-Regular;
+
+    /* colors */
+    --color-tint-1:#FDF1F1;
+    --color-tint-2:#FCE8E8;
+    --color-tint-3:#F9D2D2;
+    --color-tint-4:#F6BBBB;
+    --color-tint-5:#FCA197;
+    --color-tint-6:#F66262;
+    --color-tint-7:#E43434;
+    --color-tint-8:#CB1B1B;
+    --color-tint-9:#9B1414;
+
+    --color-shade-1:#B41818;
+    --color-shade-2:#9E1515;
+    --color-shade-3:#871212;
+    --color-shade-4:#700F0F;
+    --color-shade-5:#5A0C0C;
+    --color-shade-6:#430909;
+
+    --color-ash-1:#FAFAFA;
+    --color-ash-2:#F9F9F9;
+    --color-ash-3:#EDEDED;
+    --color-ash-4:#E1E1E1;
+    --color-ash-5:#D9D9D9;
+    --color-ash-6:#CBCBCB;
+    --color-ash-7:#ADADAD;
+    --color-ash-8:#909090;
+    --color-ash-9:#717171;
+    --color-ash-10:#505050;
+    --color-ash-11:#353535;
+    --color-ash-12:#212121;
+    --color-ash-13:#121212;
+    --color-ash-14:#121212;
+
+    --color-green-x:#0F7B3B;
+
+    --color-yellow-x:#FFB800;
+
+    --color-black-x:#121212;
+
+    
+}
+
+:root {
+    --container-padding: 1rem;
+}
+@media (min-width: 768px) { /* md */
+    :root {
+        --container-padding: 2rem;
+      }
+}
+  
+@media (min-width: 1440px) { 
+    :root {
+      --container-padding: 6.75rem;
+    }
+}
+
+@layer utilities {
+    .container {
+      max-width: 1440px;  
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: var(--container-padding);
+      padding-right: var(--container-padding);
+    }
+}
+

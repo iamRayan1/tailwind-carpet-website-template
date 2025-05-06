@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/output.css">
+    <title>Login Irani Farsh</title>
+</head>
+<body class=" box-border font-RokhMedium font-semibold text-lg text-black-x">
+    <svg class="hidden">
+        <svg id="user" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.1563 5.90833C12.2196 5.90833 13.0813 6.77 13.0813 7.83333C13.0813 8.89666 12.2196 9.75833 11.1563 9.75833C10.0929 9.75833 9.23127 8.89666 9.23127 7.83333C9.23127 6.77 10.0929 5.90833 11.1563 5.90833ZM11.1563 14.1583C13.8788 14.1583 16.7479 15.4967 16.7479 16.0833V17.0917H5.5646V16.0833C5.5646 15.4967 8.43377 14.1583 11.1563 14.1583ZM11.1563 4.16666C9.13044 4.16666 7.4896 5.8075 7.4896 7.83333C7.4896 9.85916 9.13044 11.5 11.1563 11.5C13.1821 11.5 14.8229 9.85916 14.8229 7.83333C14.8229 5.8075 13.1821 4.16666 11.1563 4.16666ZM11.1563 12.4167C8.70877 12.4167 3.82294 13.645 3.82294 16.0833V18.8333H18.4896V16.0833C18.4896 13.645 13.6038 12.4167 11.1563 12.4167Z" fill="currentColor"/>
+        </svg>                   
+        <symbol id="key" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.4063 9.66667H11.7521C11.0004 7.53083 8.96544 6 6.57294 6C3.53877 6 1.07294 8.46583 1.07294 11.5C1.07294 14.5342 3.53877 17 6.57294 17C8.96544 17 11.0004 15.4692 11.7521 13.3333H12.0729L13.9063 15.1667L15.7396 13.3333L17.5729 15.1667L21.2396 11.4633L19.4063 9.66667ZM6.57294 14.25C5.06044 14.25 3.82294 13.0125 3.82294 11.5C3.82294 9.9875 5.06044 8.75 6.57294 8.75C8.08544 8.75 9.32294 9.9875 9.32294 11.5C9.32294 13.0125 8.08544 14.25 6.57294 14.25Z" fill="currentColor"/>
+        </symbol>            
+        <symbol id="phone"  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.1612 5.08333C16.1062 5.89917 15.9688 6.69667 15.7488 7.4575L16.8487 8.5575C17.2246 7.4575 17.4629 6.29333 17.5454 5.08333H16.1612ZM7.12292 16.1017C6.34375 16.3217 5.54625 16.4592 4.73958 16.5142V17.88C5.94958 17.7975 7.11375 17.5592 8.22292 17.1925L7.12292 16.1017ZM15.2812 3.25H18.4896C18.9937 3.25 19.4062 3.6625 19.4062 4.16667C19.4062 12.7742 12.4304 19.75 3.82292 19.75C3.31875 19.75 2.90625 19.3375 2.90625 18.8333V15.6342C2.90625 15.13 3.31875 14.7175 3.82292 14.7175C4.95958 14.7175 6.06875 14.5342 7.09542 14.195C7.18708 14.1583 7.28792 14.1492 7.37958 14.1492C7.61792 14.1492 7.84708 14.2408 8.03042 14.415L10.0471 16.4317C12.6412 15.1025 14.7679 12.985 16.0879 10.3908L14.0713 8.37417C13.8146 8.1175 13.7413 7.76 13.8421 7.43917C14.1813 6.4125 14.3646 5.3125 14.3646 4.16667C14.3646 3.6625 14.7771 3.25 15.2812 3.25Z" fill="currentColor"/>
+        </symbol>
+        <symbol id="eye" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        </symbol>
+        <symbol id="eye-slash" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+        </symbol>        
+    </svg>
+
+    <div class="login">
+        <div class="container">
+            <div class="flex items-center justify-between h-screen gap-6">
+                <!-- site logo,form lable and form -->
+                <div class="flex flex-col gap-0 xl:gap-6 ">
+                    <!-- logo -->
+                    <h1 class="text-[32px] font-bold text-tint-8 text-center">ایـــرانی  فرش</h1>
+
+                    <!-- form -->
+                    <div class="w-130 max-h-[548px] flex flex-col items-center gap-6 xl:gap-12">
+                        <label for="login-form" class="text-2xl text-shade-2 font-bold text-center ">ورود</label>
+                        <form id="login-form" action="#" class="w-130 flex flex-col items-center">
+                            <!-- phone -->
+                            <div class="relative w-80 h-12 lg:w-110 lg:h-14 xl:w-full mb-6">
+                                <input type="tel" maxlength="13" id="phone" autocomplete="off" placeholder=" " class="peer w-full h-full py-3 px-10 font-medium text-base text-ash-10 border border-gray-300 rounded-xl focus:outline-none focus:border-tint-8 autofill:bg-white">
+                                <label for="phone" class="absolute  bg-white px-1 text-base text-ash-10 font-medium transition-all duration-200 ease-in-out peer-placeholder-shown:top-4 peer-placeholder-shown:right-10 peer-placeholder-shown:text-lg peer-placeholder-shown:text-ash-10 peer-focus:-top-3 peer-focus:right-3.5 peer-focus:text-lg peer-focus:text-tint-8 peer-[&:not(:placeholder-shown)]:-top-3 peer-[&:not(:placeholder-shown)]:right-3.5 peer-[&:not(:placeholder-shown)]:text-lg peer-[&:not(:placeholder-shown)]:text-tint-8">شماره موبایل</label>
+                              
+                                <div class="absolute top-1/2 right-3.5 transform -translate-y-1/2 text-ash-8 peer-focus:text-tint-8 transition-colors duration-200 pointer-events-none">
+                                    <svg class="w-5.5 h-5.5">
+                                      <use href="#phone"></use>
+                                    </svg>
+                                </div>
+                            </div>
+    
+                            <!-- password -->
+                            <div class="relative w-80 h-12 lg:w-110 lg:h-14 xl:w-full mb-8">
+                                <input type="password" id="login-password" autocomplete="off" placeholder=" " class="peer w-full h-full py-3 px-10 font-medium text-base text-ash-10 border border-gray-300 rounded-xl focus:outline-none focus:border-tint-8 autofill:bg-white">
+                                <label for="login-password" class="absolute  bg-white px-1 text-base text-ash-10 font-medium transition-all duration-200 ease-in-out peer-placeholder-shown:top-4 peer-placeholder-shown:right-10 peer-placeholder-shown:text-lg peer-placeholder-shown:text-ash-10 peer-focus:-top-3 peer-focus:right-3.5 peer-focus:text-lg peer-focus:text-tint-8 peer-[&:not(:placeholder-shown)]:-top-3 peer-[&:not(:placeholder-shown)]:right-3.5 peer-[&:not(:placeholder-shown)]:text-lg peer-[&:not(:placeholder-shown)]:text-tint-8">ایجاد رمز عبور</label>
+                                <button id="toggleLoginPassword" type="button" class="w-5 h-5 absolute top-1/2 left-3.5 -translate-y-1/2 text-ash-10 hover:text-ash-11 cursor-pointer">
+                                    <svg class="w-5 h-5 ">
+                                        <use id="eyeUseLogin" href="#eye-slash"></use>
+                                    </svg>
+                                </button>
+                                <div class="absolute top-1/2 right-3.5 transform -translate-y-1/2 text-ash-8 peer-focus:text-tint-8 transition-colors duration-200 pointer-events-none">
+                                    <svg class="w-5.5 h-5.5">
+                                      <use href="#key"></use>
+                                    </svg>
+                                </div>
+                            </div>
+    
+                            <button class="submit w-80 lg:w-110 h-12 lg:h-14 xl:w-full  flex items-center justify-center text-white bg-tint-8 hover:bg-tint-9 rounded-xl cursor-pointer mb-3 lg:mb-6">ورود</button>
+    
+                            <p class=" text-xl font-medium ">ثبت نام نکرده اید؟همین حالا <a href="register.html" class=" text-tint-8">عضو</a > شوید </p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- carpet image -->
+                <div class="relative max-w-150 h-screen m-2 rounded-[48px] overflow-hidden">
+                    <!-- layer -->
+                   <div class="absolute inset-0 bg-[linear-gradient(0deg,rgba(60,63,130,0.2)_-96.09%,rgba(0,0,0,0.2)_99.55%),linear-gradient(0deg,rgba(80,85,150,1)_-99.67%,rgba(0,0,0,0)_99.78%)]"></div>
+    
+                   <!-- Image -->
+                   <img src="static/images/register_page_image/carpet-image-for-register-page.png" alt="carpet-image" class=" w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/app.js"></script>
+</body>
+</html>
